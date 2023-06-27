@@ -5,25 +5,25 @@
     <div class="input_group_modal">
         <div>Status</div>
         <select id="status">
-            <option value="0"{if $plot.status_id == 0} selected{/if}>Free</option>
-            <option value="1"{if $plot.status_id == 1} selected{/if}>Reserved</option>
-            <option value="2"{if $plot.status_id == 2} selected{/if}>Sold</option>
+            <option value="0"{if $user.status_id == 0} selected{/if}>Free</option>
+            <option value="1"{if $user.status_id == 1} selected{/if}>Reserved</option>
+            <option value="2"{if $user.status_id == 2} selected{/if}>Sold</option>
         </select>
     </div>
     <div class="input_group_modal">
         <div>Billing</div>
         <select id="billing">
-            <option value="0"{if $plot.billing == 0} selected{/if}>No</option>
-            <option value="1"{if $plot.billing == 1} selected{/if}>Yes</option>
+            <option value="0"{if $user.billing == 0} selected{/if}>No</option>
+            <option value="1"{if $user.billing == 1} selected{/if}>Yes</option>
         </select>
     </div>
     <div class="input_group_modal">
         <div>Lot number</div>
-        <input type="text" id="number" value="{$plot.number}">
+        <input type="text" id="number" value="{$user.number}">
     </div>
     <div class="input_group_modal">
         <div>Size, acres</div>
-        <input type="text" id="size" value="{$plot.size}">
+        <input type="text" id="size" value="{$user.size}">
     </div>
     <div class="input_group_modal">
         <div>Price, AED</div>
@@ -31,7 +31,7 @@
     </div>
     <div class="modal_controls">
         <div>
-            <div class="btn_modal" onclick="common.user_edit_update({$plot.id});">Save</div>
+            <div class="btn_modal" onclick="common.user_edit_update({$user.id});">Save</div>
         </div>
         <div>
             <div class="btn_modal light" onclick="common.modal_hide();">Cancel</div>

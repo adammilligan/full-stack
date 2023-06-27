@@ -64,7 +64,7 @@ class User {
                 $items[] = [
                     'id' => (int) $row['plot_id'],
                     'status' => $row['status'],
-                    'status_str' => Plot::plot_status_str($row['status']),
+                    'status_str' => User::user_status_str($row['status']),
                     'billing' => $row['billing'],
                     'number' => $row['number'],
                     'size' => $row['size'],

@@ -1,2 +1,5 @@
 partials_c/*.php
 .idea
+test.sql
+cfg/general.inc.php
+.DS_Store
